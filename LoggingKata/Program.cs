@@ -50,10 +50,21 @@ namespace LoggingKata
                         distance = getDist;
                         tacoBell1 = locA;
                         tacoBell2 = locB;
+
+
+                        
                     }
+                    
+
+                    
                 }
+
+               
             }
-            Console.WriteLine($"{tacoBell1.Name} and {tacoBell2.Name} are greatest distance from each other.");
+            Console.WriteLine($"{tacoBell1.Name} and {tacoBell2.Name} are greatest distance. They are {Math.Round(distance * 0.000621)} miles apart.");
+            Console.WriteLine($"How fast will you be driving from one location to another?");
+             double userinput = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine($"It will take: {Math.Round(distance * 0.000621 / userinput)} hours to arrive. ");
         }
     }
 }
